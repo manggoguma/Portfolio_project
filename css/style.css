@@ -224,3 +224,11 @@ section.section-show {
         transform: translateY(0);
     }
 }
+
+.icon-box {
+    text-align: center;
+    background: rgba(204, 204, 204, 0.1);
+    padding: 80px 20px;
+    width: 244px;
+    height: 235.8px;
+}
