@@ -32,7 +32,6 @@ a {
 
 ul,
 li {
-    ist-style-type: none;
     list-style: none;
 }
 
@@ -45,12 +44,6 @@ li {
     transition: ease-in-out 0.3s;
     font-family: "Open Sans", sans-serif;
     color: #e1e1e1;
-}
-
-.container00 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .main h1 {
@@ -273,24 +266,39 @@ section.section-show {
 }
 
 .contact {
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 .container {
     position: relative;
+    padding: 30px;
+    background-color: #04040485;
+}
+
+.nav-container {
+    padding: 0 30px !important;
 }
 
 .row {
     width: 100%;
     justify-content: space-between;
-    background-color: #040404ce;
     padding: 0;
     margin: 0;
 }
 
+.row-bg {
+    background-color: #040404ad;
+}
+
 .row-pm {
-    padding: 20px;
-    border: solid 1px #35e888;
+    padding: 0px;
+    border: solid 1px #35e8896b;
+}
+
+.row-pm-10 {
+    padding: 0px;
+    /*border: solid 1px #35e8896b;*/
+    padding: 10px;
 }
 
 /* Designed*/
@@ -338,8 +346,307 @@ section.section-show {
         opacity: 0;
         transform: translateY(100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/*-----------공통----------*/
+.section-title h2 {
+    font-size: 14px;
+    line-height: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+}
+
+.section-title p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*-----------About----------*/
+.about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #18d26e;
+}
+
+.about-me .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.about-me .content ul strong {
+    margin-right: 10px;
+    letter-spacing: 1.2px;
+}
+
+.about-me .content ul i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #18d26e;
+    line-height: 0;
+}
+
+.about-me .content p:last-child {
+    margin-bottom: 0;
+}
+
+/*---------count-----------*/
+.count-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    margin-top: 35px;
+}
+
+.count_icon {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: #18d26e;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s ease-in-out;
+}
+
+.count_num {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.count_num span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #fff;
+}
+
+.count_num p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/*---------skill-----------*/
+.progress {
+    display: block;
+    height: 70px;
+    background: none;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.progress_itme i {
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.progress-icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.progress .skill .percent {
+    float: right;
+    font-style: normal;
+}
+
+.progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ProgressBar {
+    position: relative;
+    box-sizing: content-box;
+    height: 10px;
+    padding: 0px;
+}
+
+.ProgressBar>span {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ProgressBar>span:after,
+.animate>span>span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(-45deg,
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
+    z-index: 1;
+    background-size: 50px 50px;
+    animation: ProgressBar-move 1.5s linear infinite;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+@keyframes ProgressBar-move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+.ProgressBar-red>span {
+    background-image: linear-gradient(#f0a3a3, #f42323);
+}
+
+.ProgressBar-green>span {
+    background-image: linear-gradient(#5dd07b, #18d26e);
+}
+
+/*---------Lecture-----------*/
+.Lecture-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 0;
+}
+
+.Lecture_img {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.Lecture_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.Lecture_item p {
+    text-align: center;
+    padding: 5px 15px;
+    margin-top: 15px;
+    background-color: #000000;
+    color: #18d26e;
+    border-radius: 20px;
+}
+
+
+.Lecture_item h3 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.Lecture_item_marquee {
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    font-size: 15px;
+    color: #e4e4e4;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.Lecture_item_marquee span {
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+
+@keyframes marquee {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+.Lecture_reviews {
+    font-size: 12px;
+}
+
+.review__star {
+    color: #18d26e;
+}
+
+.review_count {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.Lecture_details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
 }
