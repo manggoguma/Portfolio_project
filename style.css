@@ -1,0 +1,204 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    /* background: #040404 url("../img/main_bg01.jpg") top right no-repeat; */
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+
+.container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+}
+
+.contact {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid black;
+}
+
+.contactTitle h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1px;
+    margin-bottom: 20px;
+    color: #aaaaaa;
+}
+
+.contactTitle h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+}
+
+.contactTitle p {
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.infoBox {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    color: rgb(68, 68, 68);
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 15px;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+.infoText h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);;
+
+}
+
+.infoBox p{
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    font-size: 14px;
+}
+.iconBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #18d26e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.iconBox i {
+    color: #18d26e;  
+    font-size: 24px;
+}
+
+.contactMain {
+    border: 1px solid blue;
+}
+
+.socialIcon i {
+    margin-left: 10px;
+    margin-top: 1em;
+    padding-bottom: 0.9em;
+    color: white;
+}
+
+.socialIcon i:hover{
+  color: #18d26e;
+}
+
+.socialIcon a {
+    text-decoration: none;
+}
+
+.contactForm {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 3px solid white;
+
+}
+
+.contactForm .form-group input {
+    width: 100%;
+    padding: 10px;  
+    margin: 5px 0;  
+    box-sizing: border-box; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contactForm .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactForm .col-md-6 {
+    flex: 1;
+    min-width: 200px; 
+}
+
+.contactForm .form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    /* border: 2px solid #ccc; */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 200px; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+textarea:focus {
+    border-color: #4ceb95;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 235, 149, 0.5);
+}
+
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
+
+.submitResult {
+    display: none; /* 초기에는 숨겨진 상태로 설정 */
+}
+
+.resumeMain{
+    border: 1px red solid;
+}
+.resumeTitle{
+    font-size: 26px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+.resumeItem h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(24, 210, 110);
+    margin-bottom: 10px;
+}
+.resumeItem h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    width: 140px;
+    height: 30px;
+}
