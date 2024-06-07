@@ -681,7 +681,7 @@
             <!-- 해외유튜버 끝-->
 
         </div>
-
+        <button onclick="topFunction()" id="topBtn" title="맨 위로 가기"><img id="topBtnImg" src="https://img1.sdmall.co.kr/_assets/image/icon/top.png"></button>
     </div>
 </section><!-- End Portfolio Section -->
 
@@ -705,6 +705,24 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
+<script>
+    // 버튼을 표시하거나 숨기는 함수
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // 버튼을 클릭했을 때 실행되는 함수
+    function topFunction() {
+        document.body.scrollTop = 0; // Safari
+        document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
+    }
+</script>
 </body>
 
 </html>

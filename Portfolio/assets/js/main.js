@@ -279,8 +279,6 @@
     showItems(Infinity);
   });
 
-
-
   /**
    * Initiate portfolio lightbox 
    */
