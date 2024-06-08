@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩알려주는 누나</title>
+
+    <!-- 파비콘 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- 부트스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS파일-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/64421bbe6d.js" crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- 스위퍼슬라이드 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <section class="contact">
+        <div class="container nav-container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <h1><a href="index.html"><img src="img/cl_logo.png"> Coding Noona </a></h1>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                            </li>
+                            <!--li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Portfolio
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars menu_button"></i>
+                    </button>
+                </div>
+            </nav>
+
+            <nav class="navbar_mobile navbar-dark">
+                <div class="container-fluid">
+                    <!--button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button-->
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Category</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Resume.html">Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row container-fluid-tail">
+                            <div>
+                                <ul>
+                                    <li><i class="fa-regular fa-greater-than"></i> name: <span>김빛나</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Birthday: <span>1 May 1995</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> City: <span>한국. 서울</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Phone: <span>010 456 7890</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Age: <span>30</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Freelance: <span>Available</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Website: <span><a href="https://codingnoona.thinkific.com/" target="_blank">codingnoona.thinkific.com</a>s</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> E-mail: <span>codingnuna1008@gmail.com</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+
+
+
+    <section class="container slide-up">
+        <div class="section-title">
+            <h2>CHECK MY RESUME</h2>
+            <p>RESUME</p>
+        </div>
+
+        <div class="row resumeMain">
+            <div class="col-lg-6">
+                <h3 class="resumeTitle">Summary</h3>
+                <div class="resumeItem pb-0">
+                    <h4>Bitna Kim</h4>
+                    <p>
+                        <em>해외에서 부트캠프 강사로 2년간 근무하면서 100명이 넘는 문과 학생들을 가르쳐본 경험을 토대로 연구해서 나온 최고의 티칭 방법으로 여러분들을 가르칩니다.
+                            웹 개발자로 4년간 근무했으며 Harvard-University 실용음악과 수석졸업을 했습니다.
+                            ✨현재 '코딩알려주는 누나' 유투브 채널을 운영하고 있으며 코딩을 배우고싶은 여러분들을 위한 무료 클래스와 정보들을 나누고 있습니다</em>
+                    </p>
+                    <ul>
+                        <li>전) 배달의 민족 베트남 front-end developer</li>
+                        <li>전) 호주국제은행 교육팀 강사</li>
+                    </ul>
+                </div>
+
+
+                <h3 class="resumeTitle">Education</h3>
+                <div class="resumeItem">
+                    <h4>Harvard-University</h4>
+                    <h5>2016-2019</h5>
+                    <p>실용음악학과</p>
+                    <p>학사 수석 졸업</p>
+                </div>
+                <div class="resumeItem">
+                    <h4>멜버른대학교</h4>
+                    <h5>2020-2022</h5>
+                    <p>실용무용학과</p>
+                    <p>석사 졸업</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="resumeTitle">my projects</h3>
+                <div class="resumeItem">
+                    <h4>spotify website</h4>
+                    <h5>24.5.31~24.06.01</h5>
+                    <p><em>HTML,CSS를 활용한 spotify 사이트를 구현하였습니다</em></p>
+                    <ul>
+                        <li>의미론적 태그 사용</li>
+                        <li>상대경로 절대경로 적용</li>
+                    </ul>
+                    <p>
+                        저의 작품이 궁금하시다면?✨
+                        <a class="resumelink" href="https://github.com/legobitna/noona-spotify">code</a>
+
+                        <a class="resumelink" href="https://noona-spotify.netlify.app/">demo</a>
+                    </p>
+                </div>
+
+                <div class="resumeItem">
+                    <h4>louisvitton website</h4>
+                    <h5>24.5.31~24.06.01</h5>
+                    <p><em>HTML,CSS를 활용한 louisvitton 메인페이지를 구현하였습니다</em></p>
+                    <ul>
+                        <li>미디어쿼리를 사용하여 모바일 전환시 전용 footer 생성</li>
+                        <li>사용자 편의성을 고려한 반응현 웹사이트 구현</li>
+                        <li>부트스트랩 사용</li>
+
+                    </ul>
+                    <p>
+                        저의 작품이 궁금하시다면?✨
+                        <a class="resumelink" href="https://github.com/legobitna/noona-louisvuitton">code</a>
+                        <a class="resumelink" href="https://noona-louisvuitton.netlify.app/">demo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="Designed">
+        Designed by <a href="#">그룹-12 성현, 원준, 하은, 철중</a>
+    </div>
+</body>
+
+</html>
