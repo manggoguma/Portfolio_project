@@ -233,9 +233,5 @@ section.section-show {
 
 .service-container {
     padding: 30px;
-}
-
-.d-flex {
-    display: flex;
-    padding: 12px;
+    margin: 0px 71px;
 }
