@@ -229,6 +229,13 @@ section.section-show {
     text-align: center;
     background: rgba(204, 204, 204, 0.1);
     padding: 80px 20px;
-    width: 244px;
-    height: 235.8px;
+}
+
+.service-container {
+    padding: 30px;
+}
+
+.d-flex {
+    display: flex;
+    padding: 12px;
 }
