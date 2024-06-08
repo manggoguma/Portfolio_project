@@ -39,12 +39,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
+    <!-- 스위퍼슬라이드 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+
     <section class="contact">
-        <div class="container">
+        <div class="container nav-container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <div class="logo">
@@ -120,8 +124,19 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="">
-
+                        <div class="row container-fluid-tail">
+                            <div>
+                                <ul>
+                                    <li><i class="fa-regular fa-greater-than"></i> name: <span>김빛나</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Birthday: <span>1 May 1995</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> City: <span>한국. 서울</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Phone: <span>010 456 7890</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Age: <span>30</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Freelance: <span>Available</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> Website: <span><a href="https://codingnoona.thinkific.com/" target="_blank">codingnoona.thinkific.com</a>s</span></li>
+                                    <li><i class="fa-regular fa-greater-than"></i> E-mail: <span>codingnuna1008@gmail.com</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,41 +145,86 @@
         </div>
     </section>
 
-    <section class="contact slide-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-            </div>
-        </div>
-    </section>
 
-    <section class="contact slide-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-            </div>
-        </div>
-    </section>
 
-    <section class="contact slide-up">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
-                <div class="col-lg-3 col-sm-6 col-xs-12 row-pm"> Resume</div>
+    <section class="container slide-up">
+        <div class="section-title">
+            <h2>CHECK MY RESUME</h2>
+            <p>RESUME</p>
+        </div>
+
+        <div class="row resumeMain">
+            <div class="col-lg-6">
+                <h3 class="resumeTitle">Summary</h3>
+                <div class="resumeItem pb-0">
+                    <h4>Bitna Kim</h4>
+                    <p>
+                        <em>해외에서 부트캠프 강사로 2년간 근무하면서 100명이 넘는 문과 학생들을 가르쳐본 경험을 토대로 연구해서 나온 최고의 티칭 방법으로 여러분들을 가르칩니다.
+                            웹 개발자로 4년간 근무했으며 Harvard-University 실용음악과 수석졸업을 했습니다.
+                            ✨현재 '코딩알려주는 누나' 유투브 채널을 운영하고 있으며 코딩을 배우고싶은 여러분들을 위한 무료 클래스와 정보들을 나누고 있습니다</em>
+                    </p>
+                    <ul>
+                        <li>전) 배달의 민족 베트남 front-end developer</li>
+                        <li>전) 호주국제은행 교육팀 강사</li>
+                    </ul>
+                </div>
+
+
+                <h3 class="resumeTitle">Education</h3>
+                <div class="resumeItem">
+                    <h4>Harvard-University</h4>
+                    <h5>2016-2019</h5>
+                    <p>실용음악학과</p>
+                    <p>학사 수석 졸업</p>
+                </div>
+                <div class="resumeItem">
+                    <h4>멜버른대학교</h4>
+                    <h5>2020-2022</h5>
+                    <p>실용무용학과</p>
+                    <p>석사 졸업</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="resumeTitle">my projects</h3>
+                <div class="resumeItem">
+                    <h4>spotify website</h4>
+                    <h5>24.5.31~24.06.01</h5>
+                    <p><em>HTML,CSS를 활용한 spotify 사이트를 구현하였습니다</em></p>
+                    <ul>
+                        <li>의미론적 태그 사용</li>
+                        <li>상대경로 절대경로 적용</li>
+                    </ul>
+                    <p>
+                        저의 작품이 궁금하시다면?✨
+                        <a class="resumelink" href="https://github.com/legobitna/noona-spotify">code</a>
+
+                        <a class="resumelink" href="https://noona-spotify.netlify.app/">demo</a>
+                    </p>
+                </div>
+
+                <div class="resumeItem">
+                    <h4>louisvitton website</h4>
+                    <h5>24.5.31~24.06.01</h5>
+                    <p><em>HTML,CSS를 활용한 louisvitton 메인페이지를 구현하였습니다</em></p>
+                    <ul>
+                        <li>미디어쿼리를 사용하여 모바일 전환시 전용 footer 생성</li>
+                        <li>사용자 편의성을 고려한 반응현 웹사이트 구현</li>
+                        <li>부트스트랩 사용</li>
+
+                    </ul>
+                    <p>
+                        저의 작품이 궁금하시다면?✨
+                        <a class="resumelink" href="https://github.com/legobitna/noona-louisvuitton">code</a>
+                        <a class="resumelink" href="https://noona-louisvuitton.netlify.app/">demo</a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="Designed">
-        Designed by <a href="#">Coding Noona</a>
+        Designed by <a href="#">그룹-12 성현, 원준, 하은, 철중</a>
     </div>
 </body>
 

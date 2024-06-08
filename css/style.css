@@ -202,6 +202,28 @@ li {
     padding: 0;
 }
 
+.container-fluid-tail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-fluid-tail ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container-fluid-tail ul i {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #18d26e;
+    line-height: 0;
+}
+
+.container-fluid-tail ul li span {
+    margin-left: 5px;
+}
+
 .collapse {
     display: flex;
     justify-content: flex-end;
@@ -272,6 +294,7 @@ section.section-show {
 .container {
     position: relative;
     padding: 30px;
+    margin-bottom: 50px;
     background-color: #04040485;
 }
 
@@ -293,12 +316,23 @@ section.section-show {
 .row-pm {
     padding: 0px;
     border: solid 1px #35e8896b;
+    overflow: hidden;
 }
 
 .row-pm-10 {
     padding: 0px;
     /*border: solid 1px #35e8896b;*/
     padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.scale_up_11 {
+    transition: transform 0.3s ease;
+}
+
+.scale_up_11:hover {
+    transform: scale(1.05);
+    border: solid #18d26e 1px;
 }
 
 /* Designed*/
@@ -388,6 +422,14 @@ section.section-show {
     font-weight: 700;
     font-size: 26px;
     color: #18d26e;
+}
+
+.about-me img {
+    transition: transform 0.3s ease;
+}
+
+.about-me img:hover {
+    transform: scale(1.2);
 }
 
 .about-me .content ul {
@@ -619,7 +661,7 @@ section.section-show {
     position: relative;
     left: 100%;
     animation: marquee 10s linear infinite;
-  }
+}
 
 @keyframes marquee {
     from {
@@ -649,4 +691,298 @@ section.section-show {
     display: flex;
     justify-content: space-around;
     margin: 15px 0;
+}
+
+/*이용후기*/
+.Reviews-slider {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    margin-bottom: 100px;
+}
+
+.Review-item {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 17px;
+}
+
+.Review-text {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.Review-text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    /* 원하는 텍스트의 줄 수 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Review-name-img {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.Review-text h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.Review-text h4 {
+    font-size: 14px;
+    color: #18d26e;
+}
+
+.Review-text .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    z-index: 2;
+    border: 6px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #18d26e;
+}
+
+.Reviews-carousel {
+    overflow: hidden;
+}
+
+/*Contact*/
+
+.infoBox {
+    display: flex;
+    align-items: center;
+    color: rgb(68, 68, 68);
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 15px;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+.infoText h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    ;
+
+}
+
+.infoBox p {
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.iconBox {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #18d26e;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.iconBox i {
+    color: #18d26e;
+    font-size: 24px;
+}
+
+.socialIcon i {
+    margin-left: 10px;
+    margin-top: 1em;
+    padding-bottom: 0.9em;
+    color: white;
+}
+
+.socialIcon i:hover {
+    color: #18d26e;
+}
+
+.socialIcon a {
+    text-decoration: none;
+}
+
+.contactForm {
+    
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contactForm .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contactForm .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactForm .col-md-6 {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contactForm .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4ceb95;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 235, 149, 0.5);
+}
+
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.submitResult {
+    display: none;
+
+} 
+
+.submitButton button {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.submitButton button:hover {
+    background: #088341;
+}
+/* resume */
+.resume {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.resumeTitle {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 20px 0 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+.resumeItem h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(24, 210, 110);
+    margin-bottom: 10px;
+}
+
+.resumeItem h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 10px;
+    width: 150px;
+    height: 30px;
+}
+
+
+.resumeItem ul {
+    padding-left: 20px;
+}
+
+.resumeItem ul li {
+    padding-bottom: 10px;
+}
+
+.resumeItem:last-child {
+    padding-bottom: 0;
+}
+
+.resumeItem::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #18d26e;
+    border: 2px solid #18d26e;
+}
+
+.resumeItem {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.resumelink {
+    text-decoration-line: underline;
+    margin-left: 3px;
 }
